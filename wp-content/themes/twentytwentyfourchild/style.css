@@ -1,0 +1,38 @@
+/**
+ * Theme Name: Twenty Twentyfour Child
+ * Template:   twentytwentyfour
+ * Blank child theme for twentytwentyfour
+ */
+ 
+ /* Changes h1 font size in lead image */
+ body h1 {
+    font-size: 5rem;
+    /* font-weight: 600; */
+ }
+
+
+/* General images */
+img {
+    border-radius: 30px;
+}
+
+ /* Screens lead image */
+ .wp-block-cover .wp-block-cover__background {
+    mix-blend-mode: screen;
+}
+
+/* Specifying border radius of lead image independently of others. Must be after img specifier in cascade! */
+.wp-block-cover img {
+     /* border-radius: 0; */
+     border-radius: 30;
+ }
+
+ /* Pain in the ass changing font color globally */
+/* body h1, h2, p {
+    color: pink;
+} */
+
+/* Mitigate abruptness in scrolling */
+html {
+    scroll-behavior: smooth;
+}
